@@ -3,9 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Josue Mendoza</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | Josue Amulek Mendoza Perez | Home Page that has information about me">
+    <meta name="author" content="Josue Mendoza">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdate.js" defer></script>
 </head>
 <body>
-    <h1>WDD 131 - Mendoza</h1>
+    <header>
+        <span id="course-title"><h1>WDD 131 – Dynamic Web Fundamentals</h1></span>
+        <nav>
+            <ul class="navigation">
+                <li><a href="https://www.linkedin.com/in/josue-amulek-mendoza-perez-857505385/" title="LinkedIn">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" title="Canvas">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/4?lang=eng&id=p20-p21#p20" title="Favorite Scripture">Scripture</a></li>
+                <li><a href="#" title="Final Project">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Josue Mendoza</h1>
+        <section class="card sec1">
+            <h2>About Me</h2>
+            <img src="images/profile.jpg" alt="Photo of Me">
+            <p>My name is Josue Amulek Mendoza Perez, but I like people to call me Amulek. I was born in Mexico, and I'm living there! Right now I'm working for the Church of Jesus Christ of Latter Day Saints as an instructor for the missionaries at the Missionary Trainer Center in Mexico. One of my hobbies is to play Ukulele and sing.</p>
+            <section class="inside">
+                <h2>Mexico City, Mexico</h2>
+                <figure>
+                    <img src="images/mexico-flag.jpg" alt="Mexico Flag">
+                    <figcaption>Official Mexico Flag</figcaption>
+                </figure>
+                <p>Mexico is the thortheen largest country in the world. The population exceeds 130 million of people, that's the reason why Mexico is the tenth most populous country globally. Mexico is known for its vibrant arts, music, and culinary diversity!</p>
+            </section>
+        </section>
+        <section class="card sec2">
+            <h2>Web Dev Resources</h2>
+            <nav>
+                <ul>
+                    <li><a href="#" title="Devto Community">Dev.to Community</a></li>
+                    <li><a href="#" title="Smashing Magazine">Smashing Magazine</a></li>
+                    <li><a href="#" title="CSS Tricks">CSS Tricks</a></li>
+                    <li><a href="#" title="W3 Schools">W3 Schools</a></li>
+                    <li><a href="#" title="Udemy">Udemy</a></li>
+                    <li><a href="#" title="Image Placeholder">Image Placeholder</a></li>
+                </ul>
+            </nav>
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> | Josue Amulek Mendoza Perez | Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
