@@ -19,6 +19,7 @@ body {
 header {
     background-color: var(--color-background);
     text-align: center;
+    color: var(--color-primary);
 }
 
 #course-title {
@@ -35,6 +36,7 @@ nav {
     text-decoration: none;
     padding: 10px 0;
     list-style-type: none;
+    color: var(--color-primary);
 }
 
 nav a {
