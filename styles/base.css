@@ -1,8 +1,7 @@
 :root {
     --color-background: rgb(0, 0, 164);
-    --color-primary: white;
+    --color-primary: rgb(245, 245, 245);
     --color-border: rgb(159, 159, 171);
-
 }
 
 * {
@@ -26,9 +25,6 @@ header {
     color: var(--color-primary);
     font-size: 20px;
     padding: 10px;
-}
-
-#course-title {
     display: block;
 }
 
@@ -45,6 +41,10 @@ nav a {
     color: var(--color-primary);
     text-decoration: none;
     font-size: 12px;
+}
+
+nav a:hover {
+    text-decoration: overline;
 }
 
 main {
