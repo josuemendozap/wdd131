@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 800px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+nav a:hover {
+    text-decoration: underline double;
+}
+
+main {
+    max-width: 700px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
+    place-items: center;
+}
+
+main h1 {
+    grid-column: 1/4;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
