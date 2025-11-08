@@ -7,10 +7,29 @@ body {
     max-width: 800px;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    background-color: rgb(30, 30, 129);
+    padding: 10px;
+}
+
 nav {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav a {
+    margin: 0 8px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+header p {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: bold;
 }
 
 nav a:hover {
@@ -27,10 +46,19 @@ main {
 }
 
 main h1 {
-    grid-column: 1/4;
+    grid-column: 1/-1;
+    font-size: 25px;
 }
 
 img {
     max-width: 100%;
+    min-width: 150px;
     height: auto;
+}
+
+footer {
+    background-color: rgb(30, 30, 129);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
 }

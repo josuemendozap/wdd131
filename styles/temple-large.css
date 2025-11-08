@@ -1,0 +1,20 @@
+@media screen and (min-width: 800px) {
+    header {
+        background-color: black;
+        color: white;
+    }
+
+    main {
+        max-width: 700px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 30px;
+        place-items: center;
+    }
+    
+    main h1 {
+        grid-column: 1/-1;
+        font-size: 25px;
+    }
+}
