@@ -14,9 +14,11 @@ footer {
     background-color: var(--color-background);
     color: var(--color-text);
     text-align: center;
-    border-bottom: 10pbax solid var(--color-border);
     padding: 10px 0;
-    max-width: auto;
+}
+
+header {
+        border-bottom: 10px solid var(--color-border);
 }
 
 
@@ -135,7 +137,6 @@ td {
     #weather::after {
         content: "🌥️";
         font-size: 22px;
-        align-items: right;
         margin-left: 15px;
     }
 
