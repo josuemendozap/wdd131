@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="The purpose of this page is to show information of a country or a place that I have visited or that I wish to visit. I always wanted to visit Canada">
+    <meta name="author" content="Josue Amulek Mendoza Perez">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Canada</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/moose-1.webp" media="(min-width: 800px)">
+                <img src="images/fox-1.webp" alt="representative animal of Canada">
+            </picture>
+            <div class="data">
+                <h2>Data</h2>
+                <table>
+                    <tr>
+                        <td class="one">Area:</td>
+                        <td>9,984,671 km2</td>
+                    </tr>
+                    <tr>
+                        <td class="one">Population:</td>
+                        <td>40,277,618</td>
+                    </tr>
+                    <tr>
+                        <td class="one">Capital:</td>
+                        <td>Ottawa</td>
+                    </tr>
+                    <tr>
+                        <td class="one">Languages:</td>
+                        <td>English, French</td>
+                    </tr>
+                    <tr>
+                        <td class="one">Currency:</td>
+                        <td>Canadian dollar</td>
+                    </tr>
+                    <tr>
+                        <td class="one">Time Zone:</td>
+                        <td>UTC -8</td>
+                    </tr>
+                    <tr>
+                        <td class="one">Calling Code:</td>
+                        <td>+613</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="weather">
+                <h2 id="weather">Weather</h2>
+                <img src="images/weather-logo.svg" alt="weather logo">
+                <table>
+                    <tr>
+                        <td class="one">Temperature:</td>
+                        <td>-5°C</td>
+                    </tr>
+                    <tr>
+                        <td class="one">Conditions:</td>
+                        <td>Mist</td>
+                    </tr>
+                    <tr>
+                        <td class="one">Wind:</td>
+                        <td>5.56 km/h</td>
+                    </tr>
+                    <tr>
+                        <td class="one">Wind Chill:</td>
+                        <td id="windChill"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <footer>
+            <p>© <span id="currentyear"></span> | Josue Amulek Mendoza Perez | Mexico</p>
+            <p id="lastModified"></p>
+        </footer>
+    </footer>
+</body>
+
+</html>
