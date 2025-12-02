@@ -1,0 +1,53 @@
+@media screen and (min-width: 600px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(30, 30, 129);
+        color: rgb(255, 255, 255);
+        padding: 10px 20px;
+        flex-direction: row;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        position: static;
+    }
+
+    nav a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    header p {
+        margin: 0;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    main {
+        max-width: 700px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 30px;
+        place-items: center;
+    }
+
+    main h1 {
+        grid-column: 1/-1;
+        font-size: 25px;
+    }
+}
