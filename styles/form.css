@@ -15,7 +15,7 @@ body {
     margin: auto;
     padding: 30px;
     border: none;
-    background: #ffffff;
+    background: var(--color-text);
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
@@ -94,7 +94,7 @@ footer {
     padding: 14px;
     font-size: 1.1rem;
     font-weight: 600;
-    color: white;
+    color: var(--color-text);
     background: #4a72e8;
     border: none;
     border-radius: 8px;
@@ -106,3 +106,92 @@ footer {
     background: #2b55c4;
 }
 
+@media screen and (max-width: 480px) {
+
+    body {
+        margin: 10px;
+        padding: 0;
+    }
+
+    .review-form fieldset {
+        padding: 20px;
+        max-width: 100%;
+        box-shadow: none;
+        border-radius: 8px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .review-form label {
+        font-size: 0.95rem;
+    }
+
+    .review-form input[type="text"],
+    .review-form input[type="date"],
+    .review-form select,
+    .review-form textarea {
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    .rating-group label {
+        font-size: 1.1rem;
+    }
+
+    .submit-btn {
+        padding: 12px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    .review-form fieldset {
+        max-width: 90%;
+        padding: 25px;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    .rating-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .checkbox-group label {
+        margin: 5px 0;
+    }
+
+    .submit-btn {
+        font-size: 1.1rem;
+        padding: 14px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+
+    .review-form fieldset {
+        max-width: 650px;
+        padding: 35px;
+    }
+
+    h1 {
+        font-size: 1.9rem;
+    }
+
+    .rating-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .submit-btn {
+        padding: 16px;
+        font-size: 1.15rem;
+    }
+}
