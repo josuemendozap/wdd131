@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <meta name="description" content="">
+    <meta name="author" content="Josue Amulek Mendoza Perez">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="review-form">
+            <fieldset>
+                <label for="product">Product Name*
+                    <select name="product" id="product" required>
+                        <option value="" disabled selected>Select a Product ...</option>
+                    </select>
+                </label>
+                
+                <div class="group-title">Overall Rating*</div>
+                <div class="rating-group">
+                    <label for="rating1"><input type="radio" name="rating" id="rating1" value="1" required> &star;</label>
+                    <label for="rating2"><input type="radio" name="rating" id="rating2" value="2" required> &star; &star;</label>
+                    <label for="rating3"><input type="radio" name="rating" id="rating3" value="3" required> &star; &star; &star;</label>
+                    <label for="rating4"><input type="radio" name="rating" id="rating4" value="4" required> &star; &star; &star; &star;</label>
+                    <label for="rating5"><input type="radio" name="rating" id="rating5" value="5" required> &star; &star; &star; &star; &star;</label>
+                </div>
+
+                <label for="installDate">Date of Installation* <input type="date" name="installDate" id="installDate" required></label>
+
+                <div class="group-title">Useful Features (check all that apply)</div>
+                <div class="checkbox-group">
+                    <label for="feature1"><input type="checkbox" name="features[]" id="feature1" value="durability"> Durability</label>
+                    <label for="feature2"><input type="checkbox" name="features[]" id="feature2" value="ease of use"> Ease of Use</label>
+                    <label for="feature3"><input type="checkbox" name="features[]" id="feature3" value="performance"> Performance</label>
+                    <label for="feature4"><input type="checkbox" name="features[]" id="feature4" value="design"> Design</label>
+                </div>
+
+                <label for="writtenReview">Written Review (Optional)<textarea name="writtenReview" id="writtenReview" rows="5" cols="40"></textarea></label>
+
+                <label for="name">Your Name (Optional) <input type="text" name="name" id="name"></label>
+                <input type="submit" value="Post My Review" class="submit-btn">
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> | Josue Amulek Mendoza Perez | Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<p id="reviewCounter"></p>
+
+<script>
+    // Get existing count from localStorage
+    let reviewCount = Number(localStorage.getItem("reviewCount")) || 0;
+
+    // Increase by 1 every time review.html loads
+    reviewCount++;
+
+    // Save updated count
+    localStorage.setItem("reviewCount", reviewCount);
+
+    // Display it on the page
+    document.getElementById("reviewCounter").textContent =
+        "Total Reviews Completed: " + reviewCount;
+</script>

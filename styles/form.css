@@ -1,0 +1,108 @@
+:root {
+    --color-background: rgb(168, 0, 0);
+    --color-text: rgb(255, 255, 255);
+    --color-border: rgb(183, 75, 37);
+}
+
+body {
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    background: #f5f7fa;
+    margin: 40px;
+}
+
+.review-form fieldset {
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    border: none;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+header,
+footer {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    text-align: center;
+    padding: 10px 0;
+}
+
+.review-form label {
+    display: block;
+    margin-top: 18px;
+    font-weight: 600;
+    color: #222;
+}
+
+
+.review-form input[type="text"],
+.review-form input[type="date"],
+.review-form select,
+.review-form textarea {
+    width: 100%;
+    margin-top: 6px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #cbd3df;
+    border-radius: 8px;
+    transition: border-color 0.2s ease;
+}
+
+.review-form input:focus,
+.review-form select:focus,
+.review-form textarea:focus {
+    border-color: #4a72e8;
+    outline: none;
+}
+
+
+.group-title {
+    margin-top: 22px;
+    font-weight: 700;
+    color: #444;
+}
+
+
+.rating-group label {
+    display: block;
+    margin: 6px 0;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #f7b500;
+}
+
+
+.checkbox-group label {
+    display: block;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+
+.submit-btn {
+    margin-top: 28px;
+    width: 100%;
+    padding: 14px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+    background: #4a72e8;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.25s ease;
+}
+
+.submit-btn:hover {
+    background: #2b55c4;
+}
+
