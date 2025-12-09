@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About & Contact | Gaming 2025</title>
+    <meta name="description" content="Learn more about our gaming company and contact us for inquiries about the newest games of 2025.">
+    <meta name="author" content="Josue Amulek Mendoza Perez">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>About & Contact</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Our company was created in 2025 to bring gamers the latest news about new releases. We focus on reviews,
+                descriptions, and community engagement. Our goal is to provide accurate and exciting information about
+                the newest games of the year.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Your Name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="your@email.com">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required placeholder="Type your message here"></textarea>
+
+                <button type="submit">Contact Gaming World</button>
+            </form>
+            <div id="confirmation"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="currentyear"></span> | Josue Amulek Mendoza Perez | Gaming World</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
